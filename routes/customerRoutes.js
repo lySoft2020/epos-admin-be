@@ -13,7 +13,7 @@ const {
   deleteWorkstationById,
   getWorkstationByCustomerId,
   updateWorkstationById,
-} = require("../controllers/Workstations");
+} = require("../controllers/workstations");
 
 const {
   createDirectDebitByCustomerId,

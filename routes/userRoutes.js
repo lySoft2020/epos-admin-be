@@ -10,12 +10,12 @@ const {
 } = require("../controllers/users");
 const { protect } = require("../middleware/authMiddleware");
 
-router.route("/").get(protect, getUsers).post(protect, createUser);
+router.route("/").get(getUsers).post(createUser);
 router
   .route("/:id")
-  .put(protect, updateUserById)
-  .get(protect, getUserById)
-  .delete(protect, deleteUserById);
+  .put(updateUserById)
+  .get(getUserById)
+  .delete(deleteUserById);
 router.route("/login").post(userLogin);
 
 module.exports = router;

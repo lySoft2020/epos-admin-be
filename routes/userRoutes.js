@@ -8,7 +8,7 @@ const {
   deleteUserById,
   userLogin,
 } = require("../controllers/users");
-const { protect } = require("../middleware/authMiddleware");
+// const { protect } = require("../middleware/authMiddleware");
 
 router.route("/").get(getUsers).post(createUser);
 router
